@@ -31,10 +31,12 @@ class customized_GAT(nn.Module):
     def forward(self, graph, feats):
         feats = self.nonlinear(feats)
         if self.retatt:
-            rst, att = self.GATConv1(graph, feats, self.retatt)
+            # rst, att = self.GATConv1(graph, feats, self.retatt)
+            rst, att = self.GATConv1(graph, feats)
             return rst.flatten(1), att
         else:
-            rst = self.GATConv1(graph, feats, self.retatt)
+            # rst = self.GATConv1(graph, feats, self.retatt)
+            rst = self.GATConv1(graph, feats)
             return rst.flatten(1)
 
 class distanceNet(nn.Module):

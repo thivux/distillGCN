@@ -1,0 +1,584 @@
+Namespace(alpha=0.2, attn_drop=0, batch_size=1, gpu=1, in_drop=0, loss_weight=1.0, lr=0.005, mode='teacher', residual=True, s_epochs=500, s_num_heads=2, s_num_hidden=68, s_num_layers=4, s_num_out_heads=2, seed=100, t_epochs=60, t_num_heads=4, t_num_hidden=256, t_num_layers=2, t_num_out_heads=6, target_layer=2, tofull=30, train_mode='together', warmup_epoch=600, weight_decay=0)
+Load model from ./models/t_model.pt
+number of parameter for teacher model: 3640748
+number of parameter for student model: 185172
+acc of teacher on test_dataloader:
+F1-Score on testset:        0.9782
+acc of teacher on train_dataloader:
+F1-Score on testset:        0.9904
+############ train student with teacher #############
+Epoch 00000 | Loss: 0.5884 | Mi: 0.0000 | Time: 2.4028s
+F1-Score on valset  :        0.3044 
+F1-Score on testset:        0.2968
+Epoch 00001 | Loss: 0.5181 | Mi: 0.0000 | Time: 2.4607s
+Epoch 00002 | Loss: 0.5016 | Mi: 0.0000 | Time: 2.2901s
+Epoch 00003 | Loss: 0.4842 | Mi: 0.0000 | Time: 2.3461s
+Epoch 00004 | Loss: 0.4672 | Mi: 0.0000 | Time: 2.2042s
+Epoch 00005 | Loss: 0.4582 | Mi: 0.0000 | Time: 2.3323s
+Epoch 00006 | Loss: 0.4434 | Mi: 0.0000 | Time: 2.2078s
+Epoch 00007 | Loss: 0.4304 | Mi: 0.0000 | Time: 2.4063s
+Epoch 00008 | Loss: 0.4084 | Mi: 0.0000 | Time: 2.1935s
+Epoch 00009 | Loss: 0.3893 | Mi: 0.0000 | Time: 2.2733s
+Epoch 00010 | Loss: 0.3765 | Mi: 0.0000 | Time: 2.1985s
+F1-Score on valset  :        0.6306 
+F1-Score on testset:        0.6612
+Epoch 00011 | Loss: 0.3614 | Mi: 0.0000 | Time: 2.1362s
+Epoch 00012 | Loss: 0.3471 | Mi: 0.0000 | Time: 2.1670s
+Epoch 00013 | Loss: 0.3344 | Mi: 0.0000 | Time: 2.1700s
+Epoch 00014 | Loss: 0.3397 | Mi: 0.0000 | Time: 2.1493s
+Epoch 00015 | Loss: 0.3155 | Mi: 0.0000 | Time: 2.1205s
+Epoch 00016 | Loss: 0.2986 | Mi: 0.0000 | Time: 2.2588s
+Epoch 00017 | Loss: 0.2781 | Mi: 0.0000 | Time: 2.1374s
+Epoch 00018 | Loss: 0.2632 | Mi: 0.0000 | Time: 2.1584s
+Epoch 00019 | Loss: 0.2561 | Mi: 0.0000 | Time: 2.1670s
+Epoch 00020 | Loss: 0.2505 | Mi: 0.0000 | Time: 2.4475s
+F1-Score on valset  :        0.7541 
+F1-Score on testset:        0.7869
+Epoch 00021 | Loss: 0.2468 | Mi: 0.0000 | Time: 2.3003s
+Epoch 00022 | Loss: 0.2397 | Mi: 0.0000 | Time: 2.1706s
+Epoch 00023 | Loss: 0.2242 | Mi: 0.0000 | Time: 2.2014s
+Epoch 00024 | Loss: 0.2199 | Mi: 0.0000 | Time: 2.3063s
+Epoch 00025 | Loss: 0.2086 | Mi: 0.0000 | Time: 2.2846s
+Epoch 00026 | Loss: 0.2014 | Mi: 0.0000 | Time: 2.4855s
+Epoch 00027 | Loss: 0.1993 | Mi: 0.0000 | Time: 2.5381s
+Epoch 00028 | Loss: 0.1994 | Mi: 0.0000 | Time: 2.2611s
+Epoch 00029 | Loss: 0.1886 | Mi: 0.0000 | Time: 2.2396s
+Epoch 00030 | Loss: 0.1783 | Mi: 0.0000 | Time: 1.7015s
+F1-Score on valset  :        0.8262 
+F1-Score on testset:        0.8605
+Epoch 00031 | Loss: 0.1783 | Mi: 0.0000 | Time: 1.6677s
+Epoch 00032 | Loss: 0.1687 | Mi: 0.0000 | Time: 1.6608s
+Epoch 00033 | Loss: 0.1680 | Mi: 0.0000 | Time: 1.6193s
+Epoch 00034 | Loss: 0.1641 | Mi: 0.0000 | Time: 1.6335s
+Epoch 00035 | Loss: 0.1723 | Mi: 0.0000 | Time: 1.6764s
+Epoch 00036 | Loss: 0.1634 | Mi: 0.0000 | Time: 1.5516s
+Epoch 00037 | Loss: 0.1651 | Mi: 0.0000 | Time: 1.6031s
+Epoch 00038 | Loss: 0.1604 | Mi: 0.0000 | Time: 1.6013s
+Epoch 00039 | Loss: 0.1481 | Mi: 0.0000 | Time: 1.5934s
+Epoch 00040 | Loss: 0.1461 | Mi: 0.0000 | Time: 1.5836s
+F1-Score on valset  :        0.8465 
+F1-Score on testset:        0.8811
+Epoch 00041 | Loss: 0.1421 | Mi: 0.0000 | Time: 1.5537s
+Epoch 00042 | Loss: 0.1390 | Mi: 0.0000 | Time: 1.6117s
+Epoch 00043 | Loss: 0.1387 | Mi: 0.0000 | Time: 1.5836s
+Epoch 00044 | Loss: 0.1393 | Mi: 0.0000 | Time: 1.6012s
+Epoch 00045 | Loss: 0.1321 | Mi: 0.0000 | Time: 1.5352s
+Epoch 00046 | Loss: 0.1344 | Mi: 0.0000 | Time: 1.5741s
+Epoch 00047 | Loss: 0.1302 | Mi: 0.0000 | Time: 1.7222s
+Epoch 00048 | Loss: 0.1257 | Mi: 0.0000 | Time: 1.6882s
+Epoch 00049 | Loss: 0.1238 | Mi: 0.0000 | Time: 1.5552s
+Epoch 00050 | Loss: 0.1223 | Mi: 0.0000 | Time: 1.5698s
+F1-Score on valset  :        0.8698 
+F1-Score on testset:        0.9018
+Epoch 00051 | Loss: 0.1187 | Mi: 0.0000 | Time: 1.5859s
+Epoch 00052 | Loss: 0.1256 | Mi: 0.0000 | Time: 1.6573s
+Epoch 00053 | Loss: 0.1222 | Mi: 0.0000 | Time: 1.6739s
+Epoch 00054 | Loss: 0.1296 | Mi: 0.0000 | Time: 1.5797s
+Epoch 00055 | Loss: 0.1282 | Mi: 0.0000 | Time: 1.6079s
+Epoch 00056 | Loss: 0.1167 | Mi: 0.0000 | Time: 1.6015s
+Epoch 00057 | Loss: 0.1117 | Mi: 0.0000 | Time: 1.7048s
+Epoch 00058 | Loss: 0.1123 | Mi: 0.0000 | Time: 1.7672s
+Epoch 00059 | Loss: 0.1083 | Mi: 0.0000 | Time: 1.7452s
+Epoch 00060 | Loss: 0.1050 | Mi: 0.0000 | Time: 1.7600s
+F1-Score on valset  :        0.8819 
+F1-Score on testset:        0.9130
+Epoch 00061 | Loss: 0.1087 | Mi: 0.0000 | Time: 1.6275s
+Epoch 00062 | Loss: 0.1051 | Mi: 0.0000 | Time: 1.6533s
+Epoch 00063 | Loss: 0.1032 | Mi: 0.0000 | Time: 1.6210s
+Epoch 00064 | Loss: 0.1002 | Mi: 0.0000 | Time: 1.5850s
+Epoch 00065 | Loss: 0.0989 | Mi: 0.0000 | Time: 1.6787s
+Epoch 00066 | Loss: 0.1020 | Mi: 0.0000 | Time: 1.6780s
+Epoch 00067 | Loss: 0.1024 | Mi: 0.0000 | Time: 1.6072s
+Epoch 00068 | Loss: 0.1018 | Mi: 0.0000 | Time: 1.6267s
+Epoch 00069 | Loss: 0.0979 | Mi: 0.0000 | Time: 1.6745s
+Epoch 00070 | Loss: 0.0988 | Mi: 0.0000 | Time: 1.6699s
+F1-Score on valset  :        0.8871 
+F1-Score on testset:        0.9180
+Epoch 00071 | Loss: 0.1117 | Mi: 0.0000 | Time: 1.6699s
+Epoch 00072 | Loss: 0.1009 | Mi: 0.0000 | Time: 1.5974s
+Epoch 00073 | Loss: 0.0972 | Mi: 0.0000 | Time: 1.6050s
+Epoch 00074 | Loss: 0.0950 | Mi: 0.0000 | Time: 1.6444s
+Epoch 00075 | Loss: 0.0952 | Mi: 0.0000 | Time: 1.6613s
+Epoch 00076 | Loss: 0.0896 | Mi: 0.0000 | Time: 1.6554s
+Epoch 00077 | Loss: 0.0890 | Mi: 0.0000 | Time: 1.6538s
+Epoch 00078 | Loss: 0.0864 | Mi: 0.0000 | Time: 1.6637s
+Epoch 00079 | Loss: 0.0837 | Mi: 0.0000 | Time: 1.7396s
+Epoch 00080 | Loss: 0.0850 | Mi: 0.0000 | Time: 1.7015s
+F1-Score on valset  :        0.8917 
+F1-Score on testset:        0.9219
+Epoch 00081 | Loss: 0.0932 | Mi: 0.0000 | Time: 1.7112s
+Epoch 00082 | Loss: 0.0906 | Mi: 0.0000 | Time: 1.5803s
+Epoch 00083 | Loss: 0.1068 | Mi: 0.0000 | Time: 1.5837s
+Epoch 00084 | Loss: 0.0953 | Mi: 0.0000 | Time: 1.7482s
+Epoch 00085 | Loss: 0.0973 | Mi: 0.0000 | Time: 1.5966s
+Epoch 00086 | Loss: 0.0916 | Mi: 0.0000 | Time: 1.6334s
+Epoch 00087 | Loss: 0.0891 | Mi: 0.0000 | Time: 1.6555s
+Epoch 00088 | Loss: 0.0813 | Mi: 0.0000 | Time: 1.6663s
+Epoch 00089 | Loss: 0.0860 | Mi: 0.0000 | Time: 1.6995s
+Epoch 00090 | Loss: 0.0785 | Mi: 0.0000 | Time: 1.6496s
+F1-Score on valset  :        0.9002 
+F1-Score on testset:        0.9295
+Epoch 00091 | Loss: 0.0844 | Mi: 0.0000 | Time: 1.5789s
+Epoch 00092 | Loss: 0.0827 | Mi: 0.0000 | Time: 1.6308s
+Epoch 00093 | Loss: 0.0957 | Mi: 0.0000 | Time: 1.6555s
+Epoch 00094 | Loss: 0.0943 | Mi: 0.0000 | Time: 1.6185s
+Epoch 00095 | Loss: 0.0870 | Mi: 0.0000 | Time: 1.6795s
+Epoch 00096 | Loss: 0.0808 | Mi: 0.0000 | Time: 1.6475s
+Epoch 00097 | Loss: 0.0765 | Mi: 0.0000 | Time: 1.6596s
+Epoch 00098 | Loss: 0.0716 | Mi: 0.0000 | Time: 1.6242s
+Epoch 00099 | Loss: 0.0773 | Mi: 0.0000 | Time: 1.6501s
+Epoch 00100 | Loss: 0.0741 | Mi: 0.0000 | Time: 1.6076s
+F1-Score on valset  :        0.9067 
+F1-Score on testset:        0.9354
+Epoch 00101 | Loss: 0.0722 | Mi: 0.0000 | Time: 1.6585s
+Epoch 00102 | Loss: 0.0751 | Mi: 0.0000 | Time: 1.7762s
+Epoch 00103 | Loss: 0.0728 | Mi: 0.0000 | Time: 1.7525s
+Epoch 00104 | Loss: 0.0717 | Mi: 0.0000 | Time: 2.0162s
+Epoch 00105 | Loss: 0.0731 | Mi: 0.0000 | Time: 1.6701s
+Epoch 00106 | Loss: 0.0752 | Mi: 0.0000 | Time: 1.9213s
+Epoch 00107 | Loss: 0.0752 | Mi: 0.0000 | Time: 1.8263s
+Epoch 00108 | Loss: 0.0715 | Mi: 0.0000 | Time: 1.8439s
+Epoch 00109 | Loss: 0.0809 | Mi: 0.0000 | Time: 1.9486s
+Epoch 00110 | Loss: 0.0797 | Mi: 0.0000 | Time: 2.0280s
+F1-Score on valset  :        0.9013 
+Epoch 00111 | Loss: 0.0851 | Mi: 0.0000 | Time: 1.6381s
+Epoch 00112 | Loss: 0.0828 | Mi: 0.0000 | Time: 1.7197s
+Epoch 00113 | Loss: 0.0784 | Mi: 0.0000 | Time: 1.6395s
+Epoch 00114 | Loss: 0.0721 | Mi: 0.0000 | Time: 1.6019s
+Epoch 00115 | Loss: 0.0668 | Mi: 0.0000 | Time: 1.7027s
+Epoch 00116 | Loss: 0.0655 | Mi: 0.0000 | Time: 1.5589s
+Epoch 00117 | Loss: 0.0638 | Mi: 0.0000 | Time: 1.6196s
+Epoch 00118 | Loss: 0.0638 | Mi: 0.0000 | Time: 1.6790s
+Epoch 00119 | Loss: 0.0612 | Mi: 0.0000 | Time: 1.7582s
+Epoch 00120 | Loss: 0.0648 | Mi: 0.0000 | Time: 1.8599s
+F1-Score on valset  :        0.9119 
+F1-Score on testset:        0.9409
+Epoch 00121 | Loss: 0.0638 | Mi: 0.0000 | Time: 2.0394s
+Epoch 00122 | Loss: 0.0667 | Mi: 0.0000 | Time: 1.9883s
+Epoch 00123 | Loss: 0.0655 | Mi: 0.0000 | Time: 1.9066s
+Epoch 00124 | Loss: 0.0662 | Mi: 0.0000 | Time: 1.7985s
+Epoch 00125 | Loss: 0.0733 | Mi: 0.0000 | Time: 1.6760s
+Epoch 00126 | Loss: 0.0749 | Mi: 0.0000 | Time: 1.7106s
+Epoch 00127 | Loss: 0.0712 | Mi: 0.0000 | Time: 1.6359s
+Epoch 00128 | Loss: 0.0718 | Mi: 0.0000 | Time: 1.6355s
+Epoch 00129 | Loss: 0.0692 | Mi: 0.0000 | Time: 1.6212s
+Epoch 00130 | Loss: 0.0648 | Mi: 0.0000 | Time: 1.6504s
+F1-Score on valset  :        0.9136 
+F1-Score on testset:        0.9414
+Epoch 00131 | Loss: 0.0659 | Mi: 0.0000 | Time: 1.6576s
+Epoch 00132 | Loss: 0.0666 | Mi: 0.0000 | Time: 1.6809s
+Epoch 00133 | Loss: 0.0665 | Mi: 0.0000 | Time: 1.6741s
+Epoch 00134 | Loss: 0.0649 | Mi: 0.0000 | Time: 1.7714s
+Epoch 00135 | Loss: 0.0602 | Mi: 0.0000 | Time: 1.6446s
+Epoch 00136 | Loss: 0.0716 | Mi: 0.0000 | Time: 1.6919s
+Epoch 00137 | Loss: 0.0742 | Mi: 0.0000 | Time: 1.8329s
+Epoch 00138 | Loss: 0.0655 | Mi: 0.0000 | Time: 1.6602s
+Epoch 00139 | Loss: 0.0610 | Mi: 0.0000 | Time: 1.6537s
+Epoch 00140 | Loss: 0.0658 | Mi: 0.0000 | Time: 1.7617s
+F1-Score on valset  :        0.9112 
+Epoch 00141 | Loss: 0.0657 | Mi: 0.0000 | Time: 1.6826s
+Epoch 00142 | Loss: 0.0654 | Mi: 0.0000 | Time: 1.8802s
+Epoch 00143 | Loss: 0.0624 | Mi: 0.0000 | Time: 1.7232s
+Epoch 00144 | Loss: 0.0705 | Mi: 0.0000 | Time: 1.7820s
+Epoch 00145 | Loss: 0.0611 | Mi: 0.0000 | Time: 1.7789s
+Epoch 00146 | Loss: 0.0628 | Mi: 0.0000 | Time: 1.8453s
+Epoch 00147 | Loss: 0.0616 | Mi: 0.0000 | Time: 1.8515s
+Epoch 00148 | Loss: 0.0639 | Mi: 0.0000 | Time: 1.7242s
+Epoch 00149 | Loss: 0.0627 | Mi: 0.0000 | Time: 1.6661s
+Epoch 00150 | Loss: 0.0590 | Mi: 0.0000 | Time: 1.7220s
+F1-Score on valset  :        0.9140 
+F1-Score on testset:        0.9413
+Epoch 00151 | Loss: 0.0612 | Mi: 0.0000 | Time: 1.6232s
+Epoch 00152 | Loss: 0.0593 | Mi: 0.0000 | Time: 1.9227s
+Epoch 00153 | Loss: 0.0594 | Mi: 0.0000 | Time: 1.7323s
+Epoch 00154 | Loss: 0.0608 | Mi: 0.0000 | Time: 1.6589s
+Epoch 00155 | Loss: 0.0556 | Mi: 0.0000 | Time: 1.6424s
+Epoch 00156 | Loss: 0.0531 | Mi: 0.0000 | Time: 1.6563s
+Epoch 00157 | Loss: 0.0544 | Mi: 0.0000 | Time: 1.6157s
+Epoch 00158 | Loss: 0.0524 | Mi: 0.0000 | Time: 1.6817s
+Epoch 00159 | Loss: 0.0523 | Mi: 0.0000 | Time: 1.7554s
+Epoch 00160 | Loss: 0.0516 | Mi: 0.0000 | Time: 1.9395s
+F1-Score on valset  :        0.9171 
+F1-Score on testset:        0.9463
+Epoch 00161 | Loss: 0.0548 | Mi: 0.0000 | Time: 1.7286s
+Epoch 00162 | Loss: 0.0623 | Mi: 0.0000 | Time: 1.7774s
+Epoch 00163 | Loss: 0.0677 | Mi: 0.0000 | Time: 1.6109s
+Epoch 00164 | Loss: 0.0702 | Mi: 0.0000 | Time: 1.8826s
+Epoch 00165 | Loss: 0.0655 | Mi: 0.0000 | Time: 1.6755s
+Epoch 00166 | Loss: 0.0587 | Mi: 0.0000 | Time: 1.5884s
+Epoch 00167 | Loss: 0.0595 | Mi: 0.0000 | Time: 1.7800s
+Epoch 00168 | Loss: 0.0659 | Mi: 0.0000 | Time: 1.9420s
+Epoch 00169 | Loss: 0.0606 | Mi: 0.0000 | Time: 1.8867s
+Epoch 00170 | Loss: 0.0615 | Mi: 0.0000 | Time: 1.7582s
+F1-Score on valset  :        0.9092 
+Epoch 00171 | Loss: 0.0614 | Mi: 0.0000 | Time: 1.6772s
+Epoch 00172 | Loss: 0.0628 | Mi: 0.0000 | Time: 1.6621s
+Epoch 00173 | Loss: 0.0574 | Mi: 0.0000 | Time: 1.6563s
+Epoch 00174 | Loss: 0.0545 | Mi: 0.0000 | Time: 1.6088s
+Epoch 00175 | Loss: 0.0532 | Mi: 0.0000 | Time: 1.6925s
+Epoch 00176 | Loss: 0.0612 | Mi: 0.0000 | Time: 1.9952s
+Epoch 00177 | Loss: 0.0581 | Mi: 0.0000 | Time: 1.6621s
+Epoch 00178 | Loss: 0.0558 | Mi: 0.0000 | Time: 1.6173s
+Epoch 00179 | Loss: 0.0561 | Mi: 0.0000 | Time: 1.7647s
+Epoch 00180 | Loss: 0.0529 | Mi: 0.0000 | Time: 1.6457s
+F1-Score on valset  :        0.9204 
+F1-Score on testset:        0.9474
+Epoch 00181 | Loss: 0.0514 | Mi: 0.0000 | Time: 1.7591s
+Epoch 00182 | Loss: 0.0563 | Mi: 0.0000 | Time: 1.6584s
+Epoch 00183 | Loss: 0.0641 | Mi: 0.0000 | Time: 1.6849s
+Epoch 00184 | Loss: 0.0687 | Mi: 0.0000 | Time: 2.1680s
+Epoch 00185 | Loss: 0.0608 | Mi: 0.0000 | Time: 1.7310s
+Epoch 00186 | Loss: 0.0554 | Mi: 0.0000 | Time: 2.0581s
+Epoch 00187 | Loss: 0.0572 | Mi: 0.0000 | Time: 1.8018s
+Epoch 00188 | Loss: 0.0677 | Mi: 0.0000 | Time: 1.7399s
+Epoch 00189 | Loss: 0.0950 | Mi: 0.0000 | Time: 1.7454s
+Epoch 00190 | Loss: 0.0838 | Mi: 0.0000 | Time: 2.1773s
+F1-Score on valset  :        0.9029 
+Epoch 00191 | Loss: 0.0766 | Mi: 0.0000 | Time: 1.9536s
+Epoch 00192 | Loss: 0.0838 | Mi: 0.0000 | Time: 2.1063s
+Epoch 00193 | Loss: 0.0649 | Mi: 0.0000 | Time: 2.3934s
+Epoch 00194 | Loss: 0.0563 | Mi: 0.0000 | Time: 2.7796s
+Epoch 00195 | Loss: 0.0517 | Mi: 0.0000 | Time: 2.7745s
+Epoch 00196 | Loss: 0.0489 | Mi: 0.0000 | Time: 2.4496s
+Epoch 00197 | Loss: 0.0469 | Mi: 0.0000 | Time: 2.1244s
+Epoch 00198 | Loss: 0.0442 | Mi: 0.0000 | Time: 1.8414s
+Epoch 00199 | Loss: 0.0437 | Mi: 0.0000 | Time: 1.6752s
+Epoch 00200 | Loss: 0.0430 | Mi: 0.0000 | Time: 1.6709s
+F1-Score on valset  :        0.9271 
+F1-Score on testset:        0.9533
+Epoch 00201 | Loss: 0.0427 | Mi: 0.0000 | Time: 1.9689s
+Epoch 00202 | Loss: 0.0447 | Mi: 0.0000 | Time: 1.9379s
+Epoch 00203 | Loss: 0.0508 | Mi: 0.0000 | Time: 1.9725s
+Epoch 00204 | Loss: 0.0534 | Mi: 0.0000 | Time: 1.6328s
+Epoch 00205 | Loss: 0.0544 | Mi: 0.0000 | Time: 1.5490s
+Epoch 00206 | Loss: 0.0610 | Mi: 0.0000 | Time: 1.6039s
+Epoch 00207 | Loss: 0.0643 | Mi: 0.0000 | Time: 1.6217s
+Epoch 00208 | Loss: 0.0626 | Mi: 0.0000 | Time: 1.5860s
+Epoch 00209 | Loss: 0.0548 | Mi: 0.0000 | Time: 1.5775s
+Epoch 00210 | Loss: 0.0517 | Mi: 0.0000 | Time: 1.6680s
+F1-Score on valset  :        0.9245 
+Epoch 00211 | Loss: 0.0474 | Mi: 0.0000 | Time: 1.6210s
+Epoch 00212 | Loss: 0.0434 | Mi: 0.0000 | Time: 1.5965s
+Epoch 00213 | Loss: 0.0430 | Mi: 0.0000 | Time: 1.5830s
+Epoch 00214 | Loss: 0.0406 | Mi: 0.0000 | Time: 1.6375s
+Epoch 00215 | Loss: 0.0440 | Mi: 0.0000 | Time: 1.6196s
+Epoch 00216 | Loss: 0.0435 | Mi: 0.0000 | Time: 1.6200s
+Epoch 00217 | Loss: 0.0466 | Mi: 0.0000 | Time: 1.6506s
+Epoch 00218 | Loss: 0.0473 | Mi: 0.0000 | Time: 1.6695s
+Epoch 00219 | Loss: 0.0470 | Mi: 0.0000 | Time: 1.7077s
+Epoch 00220 | Loss: 0.0679 | Mi: 0.0000 | Time: 1.5687s
+F1-Score on valset  :        0.9144 
+Epoch 00221 | Loss: 0.0622 | Mi: 0.0000 | Time: 1.5419s
+Epoch 00222 | Loss: 0.0588 | Mi: 0.0000 | Time: 1.5705s
+Epoch 00223 | Loss: 0.0694 | Mi: 0.0000 | Time: 1.5824s
+Epoch 00224 | Loss: 0.0669 | Mi: 0.0000 | Time: 1.6608s
+Epoch 00225 | Loss: 0.0813 | Mi: 0.0000 | Time: 1.6021s
+Epoch 00226 | Loss: 0.0881 | Mi: 0.0000 | Time: 1.5639s
+Epoch 00227 | Loss: 0.0731 | Mi: 0.0000 | Time: 1.9843s
+Epoch 00228 | Loss: 0.0683 | Mi: 0.0000 | Time: 1.6979s
+Epoch 00229 | Loss: 0.0570 | Mi: 0.0000 | Time: 1.6151s
+Epoch 00230 | Loss: 0.0515 | Mi: 0.0000 | Time: 1.6700s
+F1-Score on valset  :        0.9227 
+Epoch 00231 | Loss: 0.0486 | Mi: 0.0000 | Time: 1.5108s
+Epoch 00232 | Loss: 0.0466 | Mi: 0.0000 | Time: 1.5918s
+Epoch 00233 | Loss: 0.0422 | Mi: 0.0000 | Time: 1.6240s
+Epoch 00234 | Loss: 0.0408 | Mi: 0.0000 | Time: 1.5538s
+Epoch 00235 | Loss: 0.0402 | Mi: 0.0000 | Time: 1.5419s
+Epoch 00236 | Loss: 0.0400 | Mi: 0.0000 | Time: 1.5671s
+Epoch 00237 | Loss: 0.0412 | Mi: 0.0000 | Time: 1.5787s
+Epoch 00238 | Loss: 0.0392 | Mi: 0.0000 | Time: 1.5586s
+Epoch 00239 | Loss: 0.0390 | Mi: 0.0000 | Time: 1.6646s
+Epoch 00240 | Loss: 0.0384 | Mi: 0.0000 | Time: 1.5787s
+F1-Score on valset  :        0.9301 
+F1-Score on testset:        0.9556
+Epoch 00241 | Loss: 0.0376 | Mi: 0.0000 | Time: 1.5739s
+Epoch 00242 | Loss: 0.0379 | Mi: 0.0000 | Time: 1.5705s
+Epoch 00243 | Loss: 0.0388 | Mi: 0.0000 | Time: 1.5516s
+Epoch 00244 | Loss: 0.0375 | Mi: 0.0000 | Time: 1.6031s
+Epoch 00245 | Loss: 0.0372 | Mi: 0.0000 | Time: 1.5805s
+Epoch 00246 | Loss: 0.0396 | Mi: 0.0000 | Time: 1.5809s
+Epoch 00247 | Loss: 0.0434 | Mi: 0.0000 | Time: 1.5764s
+Epoch 00248 | Loss: 0.0523 | Mi: 0.0000 | Time: 1.5840s
+Epoch 00249 | Loss: 0.0493 | Mi: 0.0000 | Time: 1.5709s
+Epoch 00250 | Loss: 0.0528 | Mi: 0.0000 | Time: 1.5998s
+F1-Score on valset  :        0.9165 
+Epoch 00251 | Loss: 0.0582 | Mi: 0.0000 | Time: 1.6138s
+Epoch 00252 | Loss: 0.0615 | Mi: 0.0000 | Time: 1.5710s
+Epoch 00253 | Loss: 0.0558 | Mi: 0.0000 | Time: 1.5809s
+Epoch 00254 | Loss: 0.0593 | Mi: 0.0000 | Time: 1.5704s
+Epoch 00255 | Loss: 0.0614 | Mi: 0.0000 | Time: 1.6518s
+Epoch 00256 | Loss: 0.0520 | Mi: 0.0000 | Time: 1.5574s
+Epoch 00257 | Loss: 0.0480 | Mi: 0.0000 | Time: 1.6600s
+Epoch 00258 | Loss: 0.0505 | Mi: 0.0000 | Time: 1.6015s
+Epoch 00259 | Loss: 0.0540 | Mi: 0.0000 | Time: 1.5801s
+Epoch 00260 | Loss: 0.0477 | Mi: 0.0000 | Time: 1.6234s
+F1-Score on valset  :        0.9250 
+Epoch 00261 | Loss: 0.0431 | Mi: 0.0000 | Time: 1.5273s
+Epoch 00262 | Loss: 0.0411 | Mi: 0.0000 | Time: 1.5339s
+Epoch 00263 | Loss: 0.0390 | Mi: 0.0000 | Time: 1.5802s
+Epoch 00264 | Loss: 0.0387 | Mi: 0.0000 | Time: 1.6397s
+Epoch 00265 | Loss: 0.0406 | Mi: 0.0000 | Time: 1.5729s
+Epoch 00266 | Loss: 0.0431 | Mi: 0.0000 | Time: 1.5753s
+Epoch 00267 | Loss: 0.0465 | Mi: 0.0000 | Time: 1.7144s
+Epoch 00268 | Loss: 0.0483 | Mi: 0.0000 | Time: 1.6591s
+Epoch 00269 | Loss: 0.0520 | Mi: 0.0000 | Time: 1.5659s
+Epoch 00270 | Loss: 0.0607 | Mi: 0.0000 | Time: 1.5607s
+F1-Score on valset  :        0.9140 
+Epoch 00271 | Loss: 0.0644 | Mi: 0.0000 | Time: 1.5638s
+Epoch 00272 | Loss: 0.0692 | Mi: 0.0000 | Time: 1.5412s
+Epoch 00273 | Loss: 0.0683 | Mi: 0.0000 | Time: 1.6863s
+Epoch 00274 | Loss: 0.0531 | Mi: 0.0000 | Time: 1.5867s
+Epoch 00275 | Loss: 0.0511 | Mi: 0.0000 | Time: 1.5459s
+Epoch 00276 | Loss: 0.0479 | Mi: 0.0000 | Time: 1.6500s
+Epoch 00277 | Loss: 0.0456 | Mi: 0.0000 | Time: 1.5837s
+Epoch 00278 | Loss: 0.0409 | Mi: 0.0000 | Time: 1.6066s
+Epoch 00279 | Loss: 0.0398 | Mi: 0.0000 | Time: 1.6564s
+Epoch 00280 | Loss: 0.0386 | Mi: 0.0000 | Time: 1.5886s
+F1-Score on valset  :        0.9315 
+F1-Score on testset:        0.9557
+Epoch 00281 | Loss: 0.0361 | Mi: 0.0000 | Time: 1.5631s
+Epoch 00282 | Loss: 0.0352 | Mi: 0.0000 | Time: 1.6103s
+Epoch 00283 | Loss: 0.0348 | Mi: 0.0000 | Time: 1.6336s
+Epoch 00284 | Loss: 0.0355 | Mi: 0.0000 | Time: 1.6449s
+Epoch 00285 | Loss: 0.0336 | Mi: 0.0000 | Time: 1.6455s
+Epoch 00286 | Loss: 0.0357 | Mi: 0.0000 | Time: 1.5741s
+Epoch 00287 | Loss: 0.0377 | Mi: 0.0000 | Time: 1.5869s
+Epoch 00288 | Loss: 0.0413 | Mi: 0.0000 | Time: 1.5785s
+Epoch 00289 | Loss: 0.0466 | Mi: 0.0000 | Time: 1.5833s
+Epoch 00290 | Loss: 0.0596 | Mi: 0.0000 | Time: 1.6017s
+F1-Score on valset  :        0.9136 
+Epoch 00291 | Loss: 0.0713 | Mi: 0.0000 | Time: 1.5711s
+Epoch 00292 | Loss: 0.0713 | Mi: 0.0000 | Time: 1.5981s
+Epoch 00293 | Loss: 0.0671 | Mi: 0.0000 | Time: 1.5688s
+Epoch 00294 | Loss: 0.0583 | Mi: 0.0000 | Time: 1.5844s
+Epoch 00295 | Loss: 0.0507 | Mi: 0.0000 | Time: 1.6674s
+Epoch 00296 | Loss: 0.0452 | Mi: 0.0000 | Time: 1.5692s
+Epoch 00297 | Loss: 0.0406 | Mi: 0.0000 | Time: 1.6750s
+Epoch 00298 | Loss: 0.0365 | Mi: 0.0000 | Time: 1.6175s
+Epoch 00299 | Loss: 0.0348 | Mi: 0.0000 | Time: 1.6142s
+Epoch 00300 | Loss: 0.0334 | Mi: 0.0000 | Time: 1.6989s
+F1-Score on valset  :        0.9314 
+F1-Score on testset:        0.9573
+Epoch 00301 | Loss: 0.0338 | Mi: 0.0000 | Time: 1.5813s
+Epoch 00302 | Loss: 0.0334 | Mi: 0.0000 | Time: 1.6463s
+Epoch 00303 | Loss: 0.0344 | Mi: 0.0000 | Time: 1.6462s
+Epoch 00304 | Loss: 0.0354 | Mi: 0.0000 | Time: 1.6660s
+Epoch 00305 | Loss: 0.0341 | Mi: 0.0000 | Time: 1.5905s
+Epoch 00306 | Loss: 0.0383 | Mi: 0.0000 | Time: 1.6025s
+Epoch 00307 | Loss: 0.0392 | Mi: 0.0000 | Time: 1.5883s
+Epoch 00308 | Loss: 0.0461 | Mi: 0.0000 | Time: 1.5314s
+Epoch 00309 | Loss: 0.0473 | Mi: 0.0000 | Time: 1.5621s
+Epoch 00310 | Loss: 0.0474 | Mi: 0.0000 | Time: 1.5917s
+F1-Score on valset  :        0.9214 
+Epoch 00311 | Loss: 0.0479 | Mi: 0.0000 | Time: 1.5836s
+Epoch 00312 | Loss: 0.0656 | Mi: 0.0000 | Time: 1.5527s
+Epoch 00313 | Loss: 0.1034 | Mi: 0.0000 | Time: 1.5719s
+Epoch 00314 | Loss: 0.0982 | Mi: 0.0000 | Time: 1.5610s
+Epoch 00315 | Loss: 0.0753 | Mi: 0.0000 | Time: 1.5454s
+Epoch 00316 | Loss: 0.0580 | Mi: 0.0000 | Time: 1.6261s
+Epoch 00317 | Loss: 0.0492 | Mi: 0.0000 | Time: 1.6723s
+Epoch 00318 | Loss: 0.0426 | Mi: 0.0000 | Time: 1.5867s
+Epoch 00319 | Loss: 0.0431 | Mi: 0.0000 | Time: 1.5781s
+Epoch 00320 | Loss: 0.0411 | Mi: 0.0000 | Time: 1.5858s
+F1-Score on valset  :        0.9311 
+Epoch 00321 | Loss: 0.0375 | Mi: 0.0000 | Time: 1.5709s
+Epoch 00322 | Loss: 0.0373 | Mi: 0.0000 | Time: 1.5729s
+Epoch 00323 | Loss: 0.0352 | Mi: 0.0000 | Time: 1.5749s
+Epoch 00324 | Loss: 0.0313 | Mi: 0.0000 | Time: 1.5788s
+Epoch 00325 | Loss: 0.0303 | Mi: 0.0000 | Time: 1.8430s
+Epoch 00326 | Loss: 0.0312 | Mi: 0.0000 | Time: 1.7955s
+Epoch 00327 | Loss: 0.0313 | Mi: 0.0000 | Time: 1.9586s
+Epoch 00328 | Loss: 0.0307 | Mi: 0.0000 | Time: 1.7675s
+Epoch 00329 | Loss: 0.0326 | Mi: 0.0000 | Time: 1.8048s
+Epoch 00330 | Loss: 0.0342 | Mi: 0.0000 | Time: 1.5885s
+F1-Score on valset  :        0.9251 
+Epoch 00331 | Loss: 0.0369 | Mi: 0.0000 | Time: 1.7752s
+Epoch 00332 | Loss: 0.0357 | Mi: 0.0000 | Time: 1.6606s
+Epoch 00333 | Loss: 0.0390 | Mi: 0.0000 | Time: 1.6454s
+Epoch 00334 | Loss: 0.0503 | Mi: 0.0000 | Time: 1.6057s
+Epoch 00335 | Loss: 0.0616 | Mi: 0.0000 | Time: 1.5644s
+Epoch 00336 | Loss: 0.0590 | Mi: 0.0000 | Time: 1.5673s
+Epoch 00337 | Loss: 0.0622 | Mi: 0.0000 | Time: 1.5809s
+Epoch 00338 | Loss: 0.0650 | Mi: 0.0000 | Time: 1.6649s
+Epoch 00339 | Loss: 0.0491 | Mi: 0.0000 | Time: 1.6614s
+Epoch 00340 | Loss: 0.0467 | Mi: 0.0000 | Time: 1.6789s
+F1-Score on valset  :        0.9261 
+Epoch 00341 | Loss: 0.0420 | Mi: 0.0000 | Time: 2.0236s
+Epoch 00342 | Loss: 0.0368 | Mi: 0.0000 | Time: 1.9643s
+Epoch 00343 | Loss: 0.0380 | Mi: 0.0000 | Time: 1.6341s
+Epoch 00344 | Loss: 0.0335 | Mi: 0.0000 | Time: 1.6349s
+Epoch 00345 | Loss: 0.0302 | Mi: 0.0000 | Time: 1.6029s
+Epoch 00346 | Loss: 0.0302 | Mi: 0.0000 | Time: 1.6183s
+Epoch 00347 | Loss: 0.0329 | Mi: 0.0000 | Time: 1.9933s
+Epoch 00348 | Loss: 0.0342 | Mi: 0.0000 | Time: 1.8310s
+Epoch 00349 | Loss: 0.0338 | Mi: 0.0000 | Time: 1.6013s
+Epoch 00350 | Loss: 0.0375 | Mi: 0.0000 | Time: 1.6503s
+F1-Score on valset  :        0.9286 
+Epoch 00351 | Loss: 0.0363 | Mi: 0.0000 | Time: 1.5802s
+Epoch 00352 | Loss: 0.0356 | Mi: 0.0000 | Time: 1.8044s
+Epoch 00353 | Loss: 0.0327 | Mi: 0.0000 | Time: 1.7972s
+Epoch 00354 | Loss: 0.0320 | Mi: 0.0000 | Time: 1.9162s
+Epoch 00355 | Loss: 0.0313 | Mi: 0.0000 | Time: 1.8255s
+Epoch 00356 | Loss: 0.0380 | Mi: 0.0000 | Time: 1.7753s
+Epoch 00357 | Loss: 0.0403 | Mi: 0.0000 | Time: 1.6416s
+Epoch 00358 | Loss: 0.0396 | Mi: 0.0000 | Time: 1.5879s
+Epoch 00359 | Loss: 0.0406 | Mi: 0.0000 | Time: 1.5965s
+Epoch 00360 | Loss: 0.0438 | Mi: 0.0000 | Time: 1.5976s
+F1-Score on valset  :        0.9221 
+Epoch 00361 | Loss: 0.0481 | Mi: 0.0000 | Time: 1.5776s
+Epoch 00362 | Loss: 0.0514 | Mi: 0.0000 | Time: 1.6707s
+Epoch 00363 | Loss: 0.0746 | Mi: 0.0000 | Time: 1.5729s
+Epoch 00364 | Loss: 0.0746 | Mi: 0.0000 | Time: 1.5358s
+Epoch 00365 | Loss: 0.0714 | Mi: 0.0000 | Time: 1.5655s
+Epoch 00366 | Loss: 0.0604 | Mi: 0.0000 | Time: 1.6343s
+Epoch 00367 | Loss: 0.0501 | Mi: 0.0000 | Time: 1.6086s
+Epoch 00368 | Loss: 0.0452 | Mi: 0.0000 | Time: 1.5650s
+Epoch 00369 | Loss: 0.0401 | Mi: 0.0000 | Time: 1.5892s
+Epoch 00370 | Loss: 0.0346 | Mi: 0.0000 | Time: 1.5713s
+F1-Score on valset  :        0.9345 
+F1-Score on testset:        0.9589
+Epoch 00371 | Loss: 0.0313 | Mi: 0.0000 | Time: 1.5514s
+Epoch 00372 | Loss: 0.0295 | Mi: 0.0000 | Time: 1.5885s
+Epoch 00373 | Loss: 0.0322 | Mi: 0.0000 | Time: 1.6389s
+Epoch 00374 | Loss: 0.0291 | Mi: 0.0000 | Time: 1.6445s
+Epoch 00375 | Loss: 0.0308 | Mi: 0.0000 | Time: 1.5596s
+Epoch 00376 | Loss: 0.0291 | Mi: 0.0000 | Time: 1.5840s
+Epoch 00377 | Loss: 0.0290 | Mi: 0.0000 | Time: 1.5498s
+Epoch 00378 | Loss: 0.0299 | Mi: 0.0000 | Time: 1.5952s
+Epoch 00379 | Loss: 0.0318 | Mi: 0.0000 | Time: 1.5582s
+Epoch 00380 | Loss: 0.0391 | Mi: 0.0000 | Time: 1.5843s
+F1-Score on valset  :        0.9302 
+Epoch 00381 | Loss: 0.0413 | Mi: 0.0000 | Time: 1.5664s
+Epoch 00382 | Loss: 0.0415 | Mi: 0.0000 | Time: 1.6068s
+Epoch 00383 | Loss: 0.0439 | Mi: 0.0000 | Time: 1.5511s
+Epoch 00384 | Loss: 0.0497 | Mi: 0.0000 | Time: 1.5896s
+Epoch 00385 | Loss: 0.0502 | Mi: 0.0000 | Time: 1.5640s
+Epoch 00386 | Loss: 0.0547 | Mi: 0.0000 | Time: 1.5988s
+Epoch 00387 | Loss: 0.0605 | Mi: 0.0000 | Time: 1.5687s
+Epoch 00388 | Loss: 0.0605 | Mi: 0.0000 | Time: 1.5697s
+Epoch 00389 | Loss: 0.0584 | Mi: 0.0000 | Time: 1.7310s
+Epoch 00390 | Loss: 0.0521 | Mi: 0.0000 | Time: 1.6872s
+F1-Score on valset  :        0.9260 
+Epoch 00391 | Loss: 0.0448 | Mi: 0.0000 | Time: 1.5767s
+Epoch 00392 | Loss: 0.0403 | Mi: 0.0000 | Time: 1.6362s
+Epoch 00393 | Loss: 0.0376 | Mi: 0.0000 | Time: 1.6163s
+Epoch 00394 | Loss: 0.0380 | Mi: 0.0000 | Time: 1.5869s
+Epoch 00395 | Loss: 0.0396 | Mi: 0.0000 | Time: 1.5797s
+Epoch 00396 | Loss: 0.0397 | Mi: 0.0000 | Time: 1.5909s
+Epoch 00397 | Loss: 0.0514 | Mi: 0.0000 | Time: 1.6139s
+Epoch 00398 | Loss: 0.0627 | Mi: 0.0000 | Time: 1.5702s
+Epoch 00399 | Loss: 0.0541 | Mi: 0.0000 | Time: 1.6096s
+Epoch 00400 | Loss: 0.0495 | Mi: 0.0000 | Time: 1.5794s
+F1-Score on valset  :        0.9230 
+Epoch 00401 | Loss: 0.0493 | Mi: 0.0000 | Time: 1.5721s
+Epoch 00402 | Loss: 0.0435 | Mi: 0.0000 | Time: 1.5724s
+Epoch 00403 | Loss: 0.0344 | Mi: 0.0000 | Time: 1.5526s
+Epoch 00404 | Loss: 0.0321 | Mi: 0.0000 | Time: 1.6013s
+Epoch 00405 | Loss: 0.0310 | Mi: 0.0000 | Time: 1.5364s
+Epoch 00406 | Loss: 0.0274 | Mi: 0.0000 | Time: 1.6257s
+Epoch 00407 | Loss: 0.0270 | Mi: 0.0000 | Time: 1.5978s
+Epoch 00408 | Loss: 0.0257 | Mi: 0.0000 | Time: 1.5647s
+Epoch 00409 | Loss: 0.0265 | Mi: 0.0000 | Time: 1.5454s
+Epoch 00410 | Loss: 0.0263 | Mi: 0.0000 | Time: 1.6179s
+F1-Score on valset  :        0.9386 
+F1-Score on testset:        0.9627
+Epoch 00411 | Loss: 0.0268 | Mi: 0.0000 | Time: 1.5184s
+Epoch 00412 | Loss: 0.0278 | Mi: 0.0000 | Time: 1.5752s
+Epoch 00413 | Loss: 0.0289 | Mi: 0.0000 | Time: 1.5404s
+Epoch 00414 | Loss: 0.0293 | Mi: 0.0000 | Time: 1.5508s
+Epoch 00415 | Loss: 0.0320 | Mi: 0.0000 | Time: 1.5444s
+Epoch 00416 | Loss: 0.0321 | Mi: 0.0000 | Time: 1.5757s
+Epoch 00417 | Loss: 0.0366 | Mi: 0.0000 | Time: 1.5612s
+Epoch 00418 | Loss: 0.0413 | Mi: 0.0000 | Time: 1.6127s
+Epoch 00419 | Loss: 0.0422 | Mi: 0.0000 | Time: 1.6012s
+Epoch 00420 | Loss: 0.0467 | Mi: 0.0000 | Time: 1.5862s
+F1-Score on valset  :        0.9183 
+Epoch 00421 | Loss: 0.0547 | Mi: 0.0000 | Time: 1.6281s
+Epoch 00422 | Loss: 0.0529 | Mi: 0.0000 | Time: 1.5684s
+Epoch 00423 | Loss: 0.0496 | Mi: 0.0000 | Time: 1.5419s
+Epoch 00424 | Loss: 0.0441 | Mi: 0.0000 | Time: 1.5733s
+Epoch 00425 | Loss: 0.0448 | Mi: 0.0000 | Time: 1.6321s
+Epoch 00426 | Loss: 0.0482 | Mi: 0.0000 | Time: 1.5587s
+Epoch 00427 | Loss: 0.0642 | Mi: 0.0000 | Time: 1.6137s
+Epoch 00428 | Loss: 0.0806 | Mi: 0.0000 | Time: 1.5813s
+Epoch 00429 | Loss: 0.0692 | Mi: 0.0000 | Time: 1.5809s
+Epoch 00430 | Loss: 0.0620 | Mi: 0.0000 | Time: 1.5358s
+F1-Score on valset  :        0.9236 
+Epoch 00431 | Loss: 0.0486 | Mi: 0.0000 | Time: 1.5371s
+Epoch 00432 | Loss: 0.0396 | Mi: 0.0000 | Time: 1.5883s
+Epoch 00433 | Loss: 0.0349 | Mi: 0.0000 | Time: 1.5571s
+Epoch 00434 | Loss: 0.0318 | Mi: 0.0000 | Time: 1.6199s
+Epoch 00435 | Loss: 0.0291 | Mi: 0.0000 | Time: 1.5363s
+Epoch 00436 | Loss: 0.0270 | Mi: 0.0000 | Time: 1.5538s
+Epoch 00437 | Loss: 0.0253 | Mi: 0.0000 | Time: 1.6255s
+Epoch 00438 | Loss: 0.0244 | Mi: 0.0000 | Time: 1.5516s
+Epoch 00439 | Loss: 0.0242 | Mi: 0.0000 | Time: 1.5939s
+Epoch 00440 | Loss: 0.0250 | Mi: 0.0000 | Time: 1.5462s
+F1-Score on valset  :        0.9389 
+F1-Score on testset:        0.9623
+Epoch 00441 | Loss: 0.0258 | Mi: 0.0000 | Time: 1.5238s
+Epoch 00442 | Loss: 0.0287 | Mi: 0.0000 | Time: 1.5525s
+Epoch 00443 | Loss: 0.0292 | Mi: 0.0000 | Time: 1.5852s
+Epoch 00444 | Loss: 0.0295 | Mi: 0.0000 | Time: 1.6059s
+Epoch 00445 | Loss: 0.0293 | Mi: 0.0000 | Time: 1.5587s
+Epoch 00446 | Loss: 0.0317 | Mi: 0.0000 | Time: 1.6427s
+Epoch 00447 | Loss: 0.0369 | Mi: 0.0000 | Time: 1.6745s
+Epoch 00448 | Loss: 0.0756 | Mi: 0.0000 | Time: 1.5813s
+Epoch 00449 | Loss: 0.0931 | Mi: 0.0000 | Time: 1.6045s
+Epoch 00450 | Loss: 0.1005 | Mi: 0.0000 | Time: 1.5502s
+F1-Score on valset  :        0.9013 
+Epoch 00451 | Loss: 0.0881 | Mi: 0.0000 | Time: 1.6072s
+Epoch 00452 | Loss: 0.0750 | Mi: 0.0000 | Time: 1.6118s
+Epoch 00453 | Loss: 0.0550 | Mi: 0.0000 | Time: 1.6969s
+Epoch 00454 | Loss: 0.0442 | Mi: 0.0000 | Time: 1.7860s
+Epoch 00455 | Loss: 0.0363 | Mi: 0.0000 | Time: 1.5921s
+Epoch 00456 | Loss: 0.0305 | Mi: 0.0000 | Time: 1.5709s
+Epoch 00457 | Loss: 0.0274 | Mi: 0.0000 | Time: 1.5631s
+Epoch 00458 | Loss: 0.0261 | Mi: 0.0000 | Time: 1.5461s
+Epoch 00459 | Loss: 0.0247 | Mi: 0.0000 | Time: 1.5196s
+Epoch 00460 | Loss: 0.0237 | Mi: 0.0000 | Time: 1.6109s
+F1-Score on valset  :        0.9418 
+F1-Score on testset:        0.9653
+Epoch 00461 | Loss: 0.0236 | Mi: 0.0000 | Time: 1.6183s
+Epoch 00462 | Loss: 0.0226 | Mi: 0.0000 | Time: 1.5281s
+Epoch 00463 | Loss: 0.0239 | Mi: 0.0000 | Time: 1.5298s
+Epoch 00464 | Loss: 0.0222 | Mi: 0.0000 | Time: 1.5834s
+Epoch 00465 | Loss: 0.0217 | Mi: 0.0000 | Time: 1.5420s
+Epoch 00466 | Loss: 0.0227 | Mi: 0.0000 | Time: 1.5820s
+Epoch 00467 | Loss: 0.0225 | Mi: 0.0000 | Time: 1.5586s
+Epoch 00468 | Loss: 0.0239 | Mi: 0.0000 | Time: 1.5867s
+Epoch 00469 | Loss: 0.0251 | Mi: 0.0000 | Time: 1.5827s
+Epoch 00470 | Loss: 0.0242 | Mi: 0.0000 | Time: 1.5150s
+F1-Score on valset  :        0.9398 
+Epoch 00471 | Loss: 0.0247 | Mi: 0.0000 | Time: 1.5491s
+Epoch 00472 | Loss: 0.0279 | Mi: 0.0000 | Time: 1.5871s
+Epoch 00473 | Loss: 0.0303 | Mi: 0.0000 | Time: 1.5598s
+Epoch 00474 | Loss: 0.0373 | Mi: 0.0000 | Time: 1.5582s
+Epoch 00475 | Loss: 0.0499 | Mi: 0.0000 | Time: 1.6111s
+Epoch 00476 | Loss: 0.0541 | Mi: 0.0000 | Time: 1.6766s
+Epoch 00477 | Loss: 0.0580 | Mi: 0.0000 | Time: 1.5392s
+Epoch 00478 | Loss: 0.0525 | Mi: 0.0000 | Time: 1.5234s
+Epoch 00479 | Loss: 0.0607 | Mi: 0.0000 | Time: 1.5600s
+Epoch 00480 | Loss: 0.0591 | Mi: 0.0000 | Time: 1.5573s
+F1-Score on valset  :        0.9218 
+Epoch 00481 | Loss: 0.0507 | Mi: 0.0000 | Time: 1.6213s
+Epoch 00482 | Loss: 0.0497 | Mi: 0.0000 | Time: 1.5548s
+Epoch 00483 | Loss: 0.0431 | Mi: 0.0000 | Time: 1.5537s
+Epoch 00484 | Loss: 0.0409 | Mi: 0.0000 | Time: 1.6107s
+Epoch 00485 | Loss: 0.0369 | Mi: 0.0000 | Time: 1.6132s
+Epoch 00486 | Loss: 0.0317 | Mi: 0.0000 | Time: 1.6858s
+Epoch 00487 | Loss: 0.0284 | Mi: 0.0000 | Time: 1.6445s
+Epoch 00488 | Loss: 0.0258 | Mi: 0.0000 | Time: 1.5499s
+Epoch 00489 | Loss: 0.0273 | Mi: 0.0000 | Time: 1.5654s
+Epoch 00490 | Loss: 0.0261 | Mi: 0.0000 | Time: 1.6249s
+F1-Score on valset  :        0.9389 
+Epoch 00491 | Loss: 0.0251 | Mi: 0.0000 | Time: 1.5646s
+Epoch 00492 | Loss: 0.0246 | Mi: 0.0000 | Time: 1.5850s
+Epoch 00493 | Loss: 0.0244 | Mi: 0.0000 | Time: 1.5870s
+Epoch 00494 | Loss: 0.0233 | Mi: 0.0000 | Time: 1.6151s
+Epoch 00495 | Loss: 0.0239 | Mi: 0.0000 | Time: 1.6178s
+Epoch 00496 | Loss: 0.0259 | Mi: 0.0000 | Time: 1.5750s
+Epoch 00497 | Loss: 0.0281 | Mi: 0.0000 | Time: 1.6198s
+Epoch 00498 | Loss: 0.0325 | Mi: 0.0000 | Time: 1.6070s
+Epoch 00499 | Loss: 0.0358 | Mi: 0.0000 | Time: 1.5733s
+f1 score on testset: 0.9653

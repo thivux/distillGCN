@@ -6,16 +6,16 @@ from local_structure import get_local_model, get_upsampling_model
 
     
 def collect_model(args, data_info):
-    device = torch.device("cpu") if args.gpu<0 else torch.device("cuda:" + str(args.gpu))
+    device = torch.device("cpu") if args.gpu<0 else torch.device("cuda:" + str(args.gpu - 1))
     
     feat_info = get_feat_info(args)
     
     t_model = get_teacher(args, data_info)
-    # t_model = t_model.to(device)
-    t_model.to(device)
+    t_model = t_model.to(device)
+    # t_model.to(device)
     s_model = get_student(args, data_info)                         
-    # s_model = s_model.to(device)
-    s_model.to(device)
+    s_model = s_model.to(device)
+    # s_model.to(device)
     #d_model = get_discriminator(args, feat_info);                   d_model.to(device)
     #gcn_transformer_model = get_gcn_transformer(args, feat_info);   gcn_transformer_model.to(device)
     #transformer_model = get_transformer_model(args, feat_info);     transformer_model.to(device)

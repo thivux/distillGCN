@@ -9,8 +9,8 @@ import torch.nn as nn
 
 from sklearn.metrics import f1_score
 import dgl
-#from dgl.data.ppi import LegacyPPIDataset as PPIDataset
-from dgl.data import PPIDataset
+from dgl.data.ppi import LegacyPPIDataset as PPIDataset
+# from dgl.data import PPIDataset
 from gat import GAT, GCN
 
 # generic func to evalate model, return score & loss 
@@ -36,6 +36,7 @@ def test_model(test_dataloader, model, device, loss_fcn):
     with torch.no_grad():
         for batch, test_data in enumerate(test_dataloader):
             subgraph, feats, labels = test_data
+            subgraph = subgraph.to(device)
             feats = feats.to(device) # device (maybe gpu) will load inputs
             labels = labels.to(device)
             test_score_list.append(evaluate(feats, model, subgraph, labels.float(), loss_fcn)[0])
@@ -70,6 +71,7 @@ def evaluate_model(valid_dataloader, train_dataloader, device, s_model, loss_fcn
     with torch.no_grad():
         for batch, valid_data in enumerate(valid_dataloader):
             subgraph, feats, labels = valid_data
+            subgraph = subgraph.to(device)
             feats = feats.to(device)
             labels = labels.to(device)
             score, val_loss = evaluate(feats.float(), s_model, subgraph, labels.float(), loss_fcn)
@@ -162,11 +164,11 @@ def get_data_loader(args):
         three dataloaders and data_info
     '''
     train_dataset = PPIDataset(mode='train')
-    print('len of an element in train_dataset', len(train_dataset[15]))
+    # print('len of an element in train_dataset', len(train_dataset[15]))
     valid_dataset = PPIDataset(mode='valid')
-    print('len of an element in valid_dataset', len(valid_dataset[1]))
+    # print('len of an element in valid_dataset', len(valid_dataset[1]))
     test_dataset = PPIDataset(mode='test')
-    print('len of an element in test_dataset', len(test_dataset[1]))
+    # print('len of an element in test_dataset', len(test_dataset[1]))
     
     train_dataloader = DataLoader(train_dataset, batch_size=args.batch_size, collate_fn=collate, num_workers=4, shuffle=True)
     fixed_train_dataloader = DataLoader(train_dataset, batch_size=args.batch_size, collate_fn=collate, num_workers=4)
@@ -195,6 +197,6 @@ def save_checkpoint(model, path):
 def load_checkpoint(model, path, device):
     '''load model
     '''
-    model.load_state_dict(torch.load(path, map_location=device), strict=False)
+    model.load_state_dict(torch.load(path, map_location=device))
     print(f"Load model from {path}")
 

@@ -134,7 +134,7 @@ def vis(args, auxiliary_model, data, device):
 
     
 def main(args):
-    device = torch.device("cpu") if args.gpu<0 else torch.device("cuda:" + str(args.gpu))
+    device = torch.device("cpu") if args.gpu<0 else torch.device("cuda:" + str(args.gpu - 1))
     data, data_info = get_data_loader(args)
     model_dict = collect_model(args, data_info)
 
